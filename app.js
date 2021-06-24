@@ -13,14 +13,16 @@ class Person {
         this.hobbies = hobbies;
     }
     info () { 
-        console.log(`My name is ${this.name} and I have ${this.pets} pets. I live in ${this.residence}, and my hobbies are ${this.hobbies}.`);
+       if (this.occupation){
+           console.log(`My name is ${this.name} and I have ${this.pets} pets. I live in ${this.residence}, and my hobbies are ${this.hobbies}, his occupation is ${this.occupation}.`);
+        } else {console.log(`My name is ${this.name} and I have ${this.pets} pets. I live in ${this.residence}, and my hobbies are ${this.hobbies}.`)
+        }
     }
     greeting() {
         console.log("Hello friends!");
     }  
 }
 
-//part two does not bring in occupation
 
 class Coder extends Person {
     constructor(name, pets, residence, hobbies, occupation) {
@@ -33,9 +35,9 @@ class Coder extends Person {
 };
 
 
-var Scott = new Person ("Scott", 0, "Burke", "3-d photography")
+var Scott = new Person ("Scott", 0, "Burke", "3-d photography", "data-scientist")
 
-var Logan = new Coder ("Logan", 2, "Burke", ["music", "games"], "student")
+var Logan = new Coder ("Logan", 2, "Burke", ["music ", "games"], "student")
 
 Scott.greeting(); 
 Scott.info();

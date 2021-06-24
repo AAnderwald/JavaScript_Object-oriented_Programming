@@ -13,15 +13,19 @@ class Person {
         this.hobbies = hobbies;
     }
     info () { 
-        console.log(`My name is ${this.name} and I have  ${this.pets} pets.  I live in ${this.residence}, and my hobbies are  ${this.hobbies}.`);
-    }
+        if (this.occupation){
+            console.log(`My name is ${this.name} and I have ${this.pets} pets. I live in ${this.residence}, and my hobbies are ${this.hobbies}, his occupation is ${this.occupation}.`);
+         } else {console.log(`My name is ${this.name} and I have ${this.pets} pets. I live in ${this.residence}, and my hobbies are ${this.hobbies}.`)
+         }
+     }
+     
     greeting(name) {
         console.log(`Hello ${name}`); 
     }
      
 }
 
-//part two does not bring in occupation
+
 
 class Coder extends Person {
     constructor(name, pets, residence, hobbies, occupation) {
