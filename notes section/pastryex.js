@@ -94,10 +94,10 @@ cookbook.addRecipe(new Recipe("bourbon balls", "sweets",
 );
 
 
- cookbook.read()
- cookbook.read ("pancakes")
- cookbook.read ("quick bread")
- cookbook.read ("bourbon balls")
+ //cookbook.read()
+ //cookbook.read ("pancakes")
+ //cookbook.read ("quick bread")
+ //cookbook.read ("bourbon balls")
 
 class Pastry {
     constructor () {
@@ -148,5 +148,6 @@ cookbook.addRecipe(new Recipe("lemon bars", "pastry",
 );
 
 
-cookbook.read ("lemon bars")
+// cookbook.read ("lemon bars")  // on console will this appear, Yoda I am
+
 
